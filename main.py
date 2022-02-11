@@ -1,16 +1,15 @@
-# This is a sample Python script.
+import requests
+url = 'http://www.wikipedia.org'
+r = requests.get(url)
+print(r.text)
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+print("Status.code.")
+print("\t*",r.status_code)
 
+h = requests.head(url)
+print("Header.")
+print("***********")
+for x in h.headers:
+    print("\t",x,":",h.headers[x])
+print("******")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
