@@ -1,5 +1,3 @@
-from abc import ABC
-
 import requests
 
 url = 'http://www.wikipedia.org'
@@ -17,7 +15,7 @@ for x in h.headers:
 print("******")
 
 headers = {
-    'User-Agent': 'Iphone 8'
+    'User-Agent': 'Mobile'
 }
 
 url2 = "http://httpbin.org/headers"
