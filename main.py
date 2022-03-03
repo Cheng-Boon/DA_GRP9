@@ -1,5 +1,5 @@
 import requests
-import scrapy
+
 
 URL = 'https://www.lego.com/en-sg/themes/marvel'
 # Task5.1
